@@ -3,6 +3,7 @@ import './ListView.scss';
 
 import SearchInput from '../../components/SearchInput/SearchInput';
 import IconButton from '../../components/IconButton/IconButton';
+import UsersList from '../../components/UsersList/UsersList';
 
 import AddIcon from '../../assets/add_icon.svg';
 
@@ -20,7 +21,7 @@ const ListView = () => {
                 </div>
             </header>
             <main>
-
+                <UsersList />
             </main>
         </div>
     );
