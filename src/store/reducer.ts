@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes';
 import SortOptions from '../models/SortOptions';
-import { getUsers, removeUser } from '../models/User';
+import { getUsers, removeUser, addUser } from '../models/User';
 
 type AppState = {
     users: Array<Object>,
@@ -22,8 +22,10 @@ const reducer = (state: AppState = initialState, action: any): AppState => {
                 sortedBy: action.payload,
             }
         case actionTypes.ADD_USER:
+            const newUsers = addUser(state.users, action.payload);
             return {
                 ...state,
+                users: newUsers,
             }
         case actionTypes.REMOVE_USER:
             const newUsersList = removeUser(state.users, action.payload);

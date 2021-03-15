@@ -12,6 +12,8 @@ const UsersList: React.FC = (props: any) => {
     const loadUsers = () => {
         let users: Array<Map<string, any>> = props.users;
 
+        console.log(users);
+
         users = searchFilter(users, props.searchText);
 
         if (props.sortedBy === SortOptions.ByFirstname) {

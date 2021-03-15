@@ -5,6 +5,7 @@ import './App.css';
 
 import ListView from './views/ListView/ListView';
 import DetailsView from './views/DetailsView/DetailsView';
+import AddUserView from './views/AddUserView/AddUserView';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/users/:id" component={DetailsView} exact/>
+          <Route path="/add" component={AddUserView} exact/>
           <Route path="/" component={ListView} />
         </Switch>
       </Router>

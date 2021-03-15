@@ -1,5 +1,4 @@
 .Avatar {
-    box-sizing: border-box;
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -10,6 +9,13 @@
 
     .usr-icon {
         width: 120px;
+        height: 200px;
+        border-radius: 100%;
+    }
+
+    .usr-img {
+        box-sizing: border-box;
+        width: 200px;
         height: 200px;
         border-radius: 100%;
     }

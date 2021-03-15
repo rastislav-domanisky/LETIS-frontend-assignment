@@ -1,0 +1,99 @@
+.Add-User-View {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        h1 {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 23px;
+        }
+
+        .empty {
+            box-sizing: border-box;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .input-div {
+        box-sizing: border-box;
+        margin-top: 25px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        .input-field {
+            box-sizing: border-box;
+            margin: 0;
+            margin-top: 15px;
+            width: 200px;
+            height: 25px;
+            outline: none;
+            border: 2px solid #232931;
+            padding: 3px 10px;
+            background: #e8f0fe;
+
+            &:focus {
+                border: 2px solid #4ecca3;
+            }
+        }
+    }
+
+    .btn-area {
+        margin-top: 40px;
+        box-sizing: border-box;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .submit-btn {
+            box-sizing: border-box;
+            width: 80px;
+            height: 35px;
+            background: #4ecca3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #232931;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+
+            &:hover {
+                background: #2aa37b;
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+    }
+}
