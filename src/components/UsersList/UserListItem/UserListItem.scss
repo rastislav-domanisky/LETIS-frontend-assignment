@@ -1,0 +1,18 @@
+.User-List-Item {
+    box-sizing: border-box;
+    background: #eeeeee;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba($color: #FFF, $alpha: 0.6);
+    }
+
+    .item {
+        text-align: start;
+        padding: 5px 20px;
+    }
+
+    .isNotAdult {
+        color: red;
+    }
+}

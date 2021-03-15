@@ -2,5 +2,24 @@
     box-sizing: border-box;
     width: 90%;
     height: 90%;
-    background: red;
+    border: #232931 solid 2px;
+    border-radius: 10px;
+    overflow: auto;
+    background: #232931;
+    padding: 1px;
+
+    .Users-List-Table {
+        width: 100%;
+
+        .User-List-Title-Item {
+            box-sizing: border-box;
+            background: #232931;
+
+            .title-item {
+                color: #FFF;
+                text-align: start;
+                padding: 5px 20px;
+            }
+        }
+    }
 }
