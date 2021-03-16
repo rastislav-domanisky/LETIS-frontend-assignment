@@ -39,3 +39,9 @@ export const addUser = (users: any, newUsr: any) => {
     myUsers.push(newUsr);
     return myUsers;
 }
+
+export const editUser = (users: any, index:number, data: any) => {
+    let myUsers = users;
+    myUsers[index] = data;
+    return myUsers;
+}

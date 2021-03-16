@@ -89,7 +89,9 @@ const DetailsView: React.FC = (props: any) => {
                     <IconButton icon={ArrowLeftIcon} onPress={() => { }} />
                 </Link>
                 <div className="right">
-                    <IconButton icon={EditIcon} onPress={() => { }} />
+                    <Link to={"/users/" + uid + "/edit"}>
+                        <IconButton icon={EditIcon} onPress={() => { }} />
+                    </Link>
                     <IconButton icon={TrashIcon} onPress={handleOpenDialog} />
                 </div>
             </header>

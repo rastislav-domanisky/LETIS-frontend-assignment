@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes';
 import SortOptions from '../models/SortOptions';
-import { getUsers, removeUser, addUser } from '../models/User';
+import { getUsers, removeUser, addUser, editUser } from '../models/User';
 
 type AppState = {
     users: Array<Object>,
@@ -37,6 +37,12 @@ const reducer = (state: AppState = initialState, action: any): AppState => {
             return {
                 ...state,
                 searchText: action.payload,
+            }
+        case actionTypes.EDIT_USER:
+            const newUsersLst = editUser(state.users, action.payload.idx, action.payload.userData);
+            return {
+                ...state,
+                users: newUsersLst,
             }
     }
     return state;
