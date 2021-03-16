@@ -40,16 +40,19 @@ const UsersList: React.FC = (props: any) => {
                     <tr className="User-List-Title-Item">
                         <th className="title-item">
                             Firstname
-                    </th>
+                        </th>
+                        <th className="title-item">
+                            Firstname
+                        </th>
                         <th className="title-item">
                             Surname
-                    </th>
+                        </th>
                         <th className="title-item">
                             Age
-                    </th>
+                        </th>
                         <th className="title-item">
                             E-mail
-                    </th>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
