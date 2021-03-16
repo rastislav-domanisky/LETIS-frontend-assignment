@@ -42,9 +42,6 @@ const UsersList: React.FC = (props: any) => {
                             Firstname
                         </th>
                         <th className="title-item">
-                            Firstname
-                        </th>
-                        <th className="title-item">
                             Surname
                         </th>
                         <th className="title-item">
