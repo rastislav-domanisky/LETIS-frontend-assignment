@@ -2,7 +2,7 @@ import React from 'react';
 import './UsersList.scss';
 import { connect } from 'react-redux';
 import SortOptions from '../../models/SortOptions';
-import { sortByAge, sortByName } from '../../models/sortFunctions';
+import { sortByAge, sortByFirstname, sortBySurname } from '../../models/sortFunctions';
 import { searchFilter } from '../../models/SearchFilter';
 
 import UserListItem from './UserListItem/UserListItem';
@@ -12,16 +12,14 @@ const UsersList: React.FC = (props: any) => {
     const loadUsers = () => {
         let users: Array<Map<string, any>> = props.users;
 
-        console.log(users);
-
         users = searchFilter(users, props.searchText);
 
         if (props.sortedBy === SortOptions.ByFirstname) {
-            users = sortByName(users);
+            users = sortByFirstname(users);
         }
 
         if (props.sortedBy === SortOptions.BySurname) {
-            users = sortByName(users);
+            users = sortBySurname(users);
         }
 
         if (props.sortedBy === SortOptions.ByAge) {
