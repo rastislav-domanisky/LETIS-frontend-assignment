@@ -98,7 +98,7 @@ const EditUserView: React.FC = (props: any) => {
     }
 
     return (
-        <div className="Add-User-View">
+        <div className="Edit-User-View">
             <header>
                 <Link to="/">
                     <IconButton icon={CrossIcon} onPress={() => { }} />
